@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #F5F5DC;
+    color: #0f0a0a;
+  }
+  
+  h1, h2, h3 {
+    font-family: Arial, sans-serif;
+    color: #0f0a0a;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .subtitle {
+    animation: fadeIn 2s ease-in;
+    color: #1a12ec;
+  }
+  
+  nav a {
+    margin: 10px 15px;
+    text-decoration: none;
+    color: #0f0a0a;
+    transition: color 0.3s;
+
+  }
+  
+  nav a:hover {
+    color: #1a12ec;
+  }
+  
+  .intro {
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .featured {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+  }
+  
+  .card {
+    background: white;
+    padding: 20px;
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    background: #175cdc;
+  }
+  
+  .gallery {
+    padding: 40px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .city-card {
+    background: white;
+    padding: 15px;
+    transition: background 0.4s;
+  }
+  
+  .city-card:hover {
+    background: #175cdc;
+    color: white;
+  }
+  
+  .img-box {
+    height: 120px;
+    margin: 10px 0;
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px;
+    background-repeat: no-repeat;
+  }
+  .bg-kabul{
+    background-image: url(./kabul.jpeg);
+    aspect-ratio: 23/9; 
+  }
+  .bg-herat{
+    background-image: url(./herat.jpeg);
+    aspect-ratio: 23/9;
+   
+  }
+  .bg-mazar{
+    background-image: url(./mazar.jpeg);
+    aspect-ratio: 21/9;
+   
+  }
+  .bg-kandahar{
+    background-image: url(./kandahar.jpeg);
+    aspect-ratio: 21/9;
+
+  }
+  .bg-bamyan{
+    background-image: url(./bamyan.jpeg);
+    aspect-ratio: 21/9;
+
+  }
+  .bg-badakhshan{
+    background-image: url(./badakhshan.jpeg);
+    aspect-ratio: 21/9;
+  }
+
+  .city-day {
+    padding: 40px;
+
+  }
+  
+  .city-content {
+    display: flex;
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    transition: background 0.4s;
+  }
+  .city-text{
+    padding: 20px;
+  }
+  .city-text>ul>li{
+    padding: 10px;
+  }
+  
+  .city-content:hover {
+    background: #175cdc;
+  }
+  
+  .city-image {
+    width: 250px;
+    height: 250px;
+    background-image: url(./herat2.jpeg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 20px;
+  }
+  
+  .submit {
+    padding: 40px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    gap: 15px;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    border: 2px solid #175cdc;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #175cdc;
+    outline: none;
+  }
+  
+  button {
+    padding: 10px;
+    background: #175cdc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #175cdc;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
